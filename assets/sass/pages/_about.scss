@@ -1,0 +1,14 @@
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #085e8c;
+  padding: 50px 0;
+
+  .statement {
+    max-width: 600px;
+    font-size: 18px;
+    color: #fff;
+    padding: 30px;
+  }
+}

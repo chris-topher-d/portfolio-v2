@@ -1,0 +1,39 @@
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #085e8c;
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 -200px 0;
+    opacity: 0;
+    animation: 1s fadeup 0.5s forwards;
+
+    h1 {
+      font-family: 'Montserrat';
+      color: #e53236;
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: 'Montserrat';
+      color: #fff;
+      font-size: 33px;
+    }
+  }
+}
+
+@keyframes fadeup {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
