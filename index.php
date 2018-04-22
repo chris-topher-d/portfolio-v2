@@ -1,5 +1,12 @@
 <?php
 
+  $msg = '';
+  $error_msg = '';
+
+  if (isset($_POST(['submit']))) {
+
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -123,9 +130,18 @@
 
     <div id='contact'>
       <div class='contact-form'>
-        <form class='' action="index.html" method="post">
-
+        <form class='' action='<?php echo $_SERVER(["PHP_SELF"]); ?>' method="post">
+          <label>Name:</label>
+          <input type='text' name='name' id='name' value='<?php echo isset($_POST(["name"])) ? $name : ""; ?>'>
+          <label>Email:</label>
+          <input type='text' name='email' id='email' value='<?php echo isset($_POST(["email"])) ? $email : ""; ?>'>
+          <label>Message:</label>
+          <textarea name='message' id='message'><?php echo isset($_POST(["message"])) ? $message : ''; ?></textarea>
+          <button type='submit' name='submit' id='send'>SEND<button>
         </form>
+        <?php if ($msg !== ''):?>
+          <div class='alert'><?php echo $msg; ?></div>
+        <?php endif; ?>
       </div>
     </div>
 
@@ -135,3 +151,11 @@
 
   </body>
 </html>
+
+<?php
+
+  function cleanData(info, '') {
+
+  }
+
+?>

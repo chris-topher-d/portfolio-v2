@@ -1,14 +1,15 @@
 #about {
+  min-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #085e8c;
-  padding: 50px 0;
+  background-color: #014e76;
+  padding: 70px 0;
 
   .statement {
     max-width: 600px;
     font-size: 18px;
     color: #fff;
-    padding: 30px;
+    padding: 0 30px;
   }
 }

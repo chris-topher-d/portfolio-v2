@@ -8,8 +8,21 @@ body {
   width: 100%;
   font-family: 'Helvetica', Arial, sans-serif; }
 
+button {
+  width: 100px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer; }
+  button:hover {
+    background-color: #014e76;
+    color: #fff; }
+
 .header {
   width: 100%;
+  min-width: 600px;
   height: 80px;
   position: absolute;
   top: 0;
@@ -25,7 +38,7 @@ body {
     opacity: 0;
     animation: 1s fadein 1s forwards; }
     .header nav ul li a {
-      font-family: 'Raleway';
+      font-family: 'Montserrat';
       text-decoration: none;
       color: #fff;
       font-size: 18px;
@@ -39,6 +52,7 @@ body {
   100% {
     opacity: 1; } }
 .footer {
+  min-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +67,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #085e8c; }
+  background-color: #085e8c;
+  min-width: 600px; }
   #home .name {
     display: flex;
     flex-direction: column;
@@ -78,6 +93,7 @@ body {
     opacity: 1;
     margin: 0; } }
 #portfolio {
+  min-width: 600px;
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -132,16 +148,60 @@ body {
         #portfolio .projects .project .description li {
           padding: 5px 0; }
 
+@media screen and (max-width: 800px) {
+  #portfolio {
+    padding: 50px 0; }
+    #portfolio .tech {
+      padding: 0 80px 30px 80px; } }
 #about {
+  min-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #085e8c;
-  padding: 50px 0; }
+  background-color: #014e76;
+  padding: 70px 0; }
   #about .statement {
     max-width: 600px;
     font-size: 18px;
     color: #fff;
-    padding: 30px; }
+    padding: 0 30px; }
+
+#contact {
+  background-color: #085e8c;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0; }
+  #contact h2 {
+    color: #fff;
+    text-transform: uppercase; }
+  #contact .form {
+    display: flex;
+    flex-direction: column;
+    width: 500px; }
+    #contact .form label {
+      color: #fff;
+      font-weight: bolder;
+      margin: 5px 0; }
+    #contact .form input {
+      box-sizing: border-box;
+      line-height: 20px;
+      border: 1px solid #fff;
+      background: transparent;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: #fff;
+      fonts-size: 20px; }
+    #contact .form textarea {
+      box-sizing: border-box;
+      min-height: 200px;
+      min-width: 500px;
+      max-width: 500px;
+      border: 1px solid #fff;
+      background: transparent;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
