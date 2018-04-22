@@ -99,7 +99,7 @@ button {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 50px 80px; }
+  padding: 50px 0; }
   #portfolio .tech {
     display: flex;
     justify-content: center;
@@ -112,7 +112,8 @@ button {
   #portfolio .projects {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    max-width: 1500px; }
     #portfolio .projects .project {
       display: flex;
       flex-direction: column;
@@ -189,10 +190,11 @@ button {
       line-height: 20px;
       border: 1px solid #fff;
       background: transparent;
-      padding: 10px;
-      margin-bottom: 20px;
       color: #fff;
-      fonts-size: 20px; }
+      fonts-size: 20px;
+      font-weight: bolder;
+      padding-left: 10px;
+      margin-bottom: 20px; }
     #contact .form textarea {
       box-sizing: border-box;
       min-height: 200px;
@@ -200,8 +202,15 @@ button {
       max-width: 500px;
       border: 1px solid #fff;
       background: transparent;
+      font-size: 1.5em;
       color: #fff;
-      padding: 10px;
+      font-weight: bolder;
+      padding: 8px 10px;
       margin-bottom: 20px; }
+  #contact .alert {
+    color: #e53236;
+    padding: 20px 0;
+    font-weight: bolder;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

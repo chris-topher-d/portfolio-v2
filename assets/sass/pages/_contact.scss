@@ -27,10 +27,11 @@
       line-height: 20px;
       border: 1px solid #fff;
       background: transparent;
-      padding: 10px;
-      margin-bottom: 20px;
       color: #fff;
       fonts-size: 20px;
+      font-weight: bolder;
+      padding-left: 10px;
+      margin-bottom: 20px;
     }
 
     textarea {
@@ -40,9 +41,18 @@
       max-width: 500px;
       border: 1px solid #fff;
       background: transparent;
+      font-size: 1.5em;
       color: #fff;
-      padding: 10px;
+      font-weight: bolder;
+      padding: 8px 10px;
       margin-bottom: 20px;
     }
+  }
+
+  .alert {
+    color: #e53236;
+    padding: 20px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
   }
 }

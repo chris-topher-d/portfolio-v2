@@ -1,9 +1,65 @@
 <?php
 
   $msg = '';
-  $error_msg = '';
+  $msgClass = 'alert-danger';
 
-  if (isset($_POST(['submit']))) {
+  if (filter_has_var(INPUT_POST, 'submit')) {
+
+    $name = check_data($_POST['name'], 'Please include your name');
+    $email = check_data($_POST['email'], 'Please use a valid email');
+    $message = check_data($_POST['message'], 'Please include a message');
+
+    if (!empty($name) && !empty($email) && !empty($message)) {
+
+      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+        // PASSED - Valid email used - Recipient Email
+        $toEmail = 'cdennis.aus@gmail.com';
+        $subject = "Contact request from $name";
+        $body = "<h2>Contact Request</h2>
+                <h4>Name</h4><p>$name</p>
+                <h4>Email</h4><p>$email</p>
+                <h4>Message</h4><p>$message</p>";
+
+        // Email Headers
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+
+        // Additional Headers
+        $headers .= "From: " .$name. "<".$email.">"."\r\n";
+
+        if (mail($toEmail, $subject, $body, $headers)) {
+
+          // PASSED - Email Sent
+          $msg = 'Thank you. Your message has been sent';
+
+        } else {
+
+          // FAILED - Email was not sent
+          $msg = 'Your message was not sent';
+
+        }
+
+      } else {
+
+        $msg = 'Please use a valid email address';
+
+      }
+    }
+  }
+
+  // Cleans data
+  function check_data($data, $error) {
+
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+
+    if (strlen($data) === 0 && $error) {
+      $msg = $error;
+    }
+
+    return $data;
 
   }
 
@@ -129,20 +185,19 @@
     </div>
 
     <div id='contact'>
-      <div class='contact-form'>
-        <form class='' action='<?php echo $_SERVER(["PHP_SELF"]); ?>' method="post">
-          <label>Name:</label>
-          <input type='text' name='name' id='name' value='<?php echo isset($_POST(["name"])) ? $name : ""; ?>'>
-          <label>Email:</label>
-          <input type='text' name='email' id='email' value='<?php echo isset($_POST(["email"])) ? $email : ""; ?>'>
-          <label>Message:</label>
-          <textarea name='message' id='message'><?php echo isset($_POST(["message"])) ? $message : ''; ?></textarea>
-          <button type='submit' name='submit' id='send'>SEND<button>
-        </form>
-        <?php if ($msg !== ''):?>
-          <div class='alert'><?php echo $msg; ?></div>
-        <?php endif; ?>
-      </div>
+      <h2>Contact</h2>
+      <form class='form' action='#contact' method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <label>Name:</label>
+        <input type='text' name='name' id='name' value="<?php echo isset($_POST["name"]) ? $name : ''; ?>">
+        <label>Email:</label>
+        <input type='text' name='email' id='email' value="<?php echo isset($_POST["email"]) ? $email : ''; ?>">
+        <label>Message:</label>
+        <textarea name='message' id='message'><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+        <button type='submit' name='submit' id='send'>SEND</button>
+      </form>
+      <?php if ($msg !== ''): ?>
+        <div class='alert'><?php echo $msg; ?></div>
+      <?php endif; ?>
     </div>
 
     <div class='footer'>
@@ -151,11 +206,3 @@
 
   </body>
 </html>
-
-<?php
-
-  function cleanData(info, '') {
-
-  }
-
-?>
