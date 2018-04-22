@@ -1,7 +1,6 @@
 <?php
 
   $msg = '';
-  $msgClass = 'alert-danger';
 
   if (filter_has_var(INPUT_POST, 'submit')) {
 
@@ -45,6 +44,10 @@
         $msg = 'Please use a valid email address';
 
       }
+    } else {
+
+      // $msg = 'Please complete all fields';
+
     }
   }
 
