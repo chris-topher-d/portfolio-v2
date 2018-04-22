@@ -38,6 +38,7 @@ button {
     opacity: 0;
     animation: 1s fadein 1s forwards; }
     .header nav ul li a {
+      display: inline-block;
       font-family: 'Montserrat';
       text-decoration: none;
       color: #fff;
@@ -45,8 +46,14 @@ button {
       font-weight: bold;
       margin: 0 15px;
       cursor: pointer; }
-      .header nav ul li a:hover {
-        border-bottom: 2px solid #e53236; }
+      .header nav ul li a:after {
+        display: block;
+        content: '';
+        border-bottom: solid 3px #e53236;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out; }
+      .header nav ul li a:hover:after {
+        transform: scaleX(1); }
 
 @keyframes fadein {
   100% {
@@ -176,7 +183,8 @@ button {
   padding: 50px 0; }
   #contact h2 {
     color: #fff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-bottom: 15px; }
   #contact .form {
     display: flex;
     flex-direction: column;
