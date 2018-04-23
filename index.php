@@ -4,9 +4,9 @@
 
   if (filter_has_var(INPUT_POST, 'submit')) {
 
-    $name = check_data($_POST['name'], 'Please include your name');
-    $email = check_data($_POST['email'], 'Please use a valid email');
-    $message = check_data($_POST['message'], 'Please include a message');
+    $name = check_data($_POST['name']);
+    $email = check_data($_POST['email']);
+    $message = check_data($_POST['message']);
 
     if (!empty($name) && !empty($email) && !empty($message)) {
 
@@ -44,23 +44,20 @@
         $msg = 'Please use a valid email address';
 
       }
+
     } else {
 
-      // $msg = 'Please complete all fields';
+      $msg = 'Please complete all fields';
 
     }
   }
 
   // Cleans data
-  function check_data($data, $error) {
+  function check_data($data) {
 
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
-
-    if (strlen($data) === 0 && $error) {
-      $msg = $error;
-    }
 
     return $data;
 
@@ -108,74 +105,64 @@
 
       <div class='projects'>
         <div class='project'>
-          <a href='#' target='_blank'>
+          <a href='https://christopherdennis.me/songify/' target='_blank'>
             <img src='assets/img/songify.jpg' alt='music-service'>
           </a>
           <div class='project-name'>
             <h2>Music Streaming Service</h2>
           </div>
           <ul class='description'>
-            <li>Built with PHP and jQuery</li>
-            <li>Uses AJAX to query MySQL database</li>
-            <li>Layout created with Flexbox and styled with SASS</li>
+            <li>HTML | SASS | jQuery | MySQL | PHP</li>
           </ul>
         </div>
 
         <div class='project'>
-          <a href='#' target='_blank'>
+          <a href='https://christopherdennis.me/twitch-app/' target='_blank'>
             <img src='assets/img/twitch-streamers.jpg' alt='twitch-app'>
           </a>
           <h2>Twitch Streamer Status</h2>
           <ul class='description'>
-            <li>React SPA styled with SASS</li>
-            <li>Uses API call to fetch current streamer info</li>
-            <li>Layout created with Flexbox</li>
+            <li>HTML | SASS | React | API</li>
           </ul>
         </div>
 
         <div class='project'>
-          <a href='#' target='_blank'>
+          <a href='https://christopherdennis.me/weather-app/' target='_blank'>
             <img src='assets/img/weather-app.jpg' alt='weather-app'>
           </a>
           <h2>React Weather Station</h2>
           <ul class='description'>
-            <li>React weather service with 5 day forcast</li>
-            <li>API call fetches current weather information</li>
-            <li>Styled with SASS</li>
+            <li>HTML | SASS | React | API</li>
           </ul>
         </div>
 
         <div class='project'>
-          <a href='#' target='_blank'>
+          <a href='https://christopherdennis.me/react-quote/' target='_blank'>
             <img src='assets/img/quote-app.jpg' alt='quote-app'>
           </a>
           <h2>Random Quote Generator</h2>
           <ul class='description'>
-            <li>React SPA styled with CSS</li>
-            <li>API call used to fetch random quote</li>
-            <li>Quote sent to Twitter with a click</li>
+            <li>HTML | CSS | React | API</li>
           </ul>
         </div>
 
         <div class='project'>
-          <a href='#' target='_blank'>
+          <a href='https://christopherdennis.me/tic-tac-toe/' target='_blank'>
             <img src='assets/img/tic-tac-toe.jpg' alt='tic-tac-toe'>
           </a>
           <h2>Tic-Tac-Toe</h2>
           <ul class='description'>
-            <li>The classic game built with jQuery</li>
-            <li>Layout created with Flexbox</li>
+            <li>HTML | CSS | jQuery</li>
           </ul>
         </div>
 
         <div class='project'>
-          <a href='#' target='_blank'>
+          <a href='https://christopherdennis.me/js-calc/' target='_blank'>
             <img src='assets/img/calc.jpg' alt='calculator'>
           </a>
           <h2>JavaScript Calculator</h2>
           <ul class='description'>
-            <li>Functional calculator built with jQuery</li>
-            <li>Layout created with Flexbox</li>
+            <li>HTML | CSS | jQuery</li>
           </ul>
         </div>
       </div>

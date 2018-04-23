@@ -217,7 +217,7 @@ button {
       margin-bottom: 20px; }
   #contact .alert {
     color: #e53236;
-    padding: 20px 0;
+    padding-top: 25px;
     font-weight: bolder;
     text-transform: uppercase; }
 
