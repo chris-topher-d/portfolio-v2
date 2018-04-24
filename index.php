@@ -70,6 +70,7 @@
   <head>
     <meta charset='utf-8'>
     <title>Christopher Dennis</title>
+    <link rel='shortcut icon' href='./favicon_c.png'>
     <link rel='stylesheet' href='assets/css/main.css'>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   </head>
@@ -171,7 +172,7 @@
     <div id='about'>
       <h2>About</h2>
       <div class='statement'>
-        <p>I'm a front-end developer who enjoys building and solving problems with code. Whether buildling
+        <p>I'm a front-end developer who enjoys building and solving problems with code. Whether creating
           a simple HTML document, or an interactive React application, my goal is to
           learn something new with every project. I code every day, but when I'm not in front of a monitor, I
           can be found hiking Austin area greenbelts, riding my motorcycle through the hill country, or digging
