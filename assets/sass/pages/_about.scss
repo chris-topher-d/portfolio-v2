@@ -1,10 +1,17 @@
 #about {
   min-width: 600px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: #014e76;
   padding: 70px 0;
+
+  h2 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
 
   .statement {
     max-width: 600px;

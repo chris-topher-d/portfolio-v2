@@ -169,8 +169,13 @@
     </div>
 
     <div id='about'>
+      <h2>About</h2>
       <div class='statement'>
-        <p>I'm a native Austinite who enjoys learning new things and spending time outdoors. I first started learning C in 2013 as a hobby and eventually made my way to front end development with the goal of becoming a full stack developer.</p>
+        <p>I'm a front-end developer who enjoys building and solving problems with code. Whether buildling
+          a simple HTML document, or an interactive React application, my goal is to
+          learn something new with every project. I code every day, but when I'm not in front of a monitor, I
+          can be found hiking Austin area greenbelts, riding my motorcycle through the hill country, or digging
+          into a book at my favorite coffee shop.</p>
       </div>
     </div>
 
