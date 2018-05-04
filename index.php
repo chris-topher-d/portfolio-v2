@@ -100,23 +100,9 @@
         <i class="devicon-sass-original"></i>
         <i class="devicon-jquery-plain-wordmark"></i>
         <i class="devicon-react-original-wordmark"></i>
-        <i class="devicon-mysql-plain-wordmark"></i>
-        <i class="devicon-php-plain"></i>
       </div>
 
       <div class='projects'>
-        <div class='project'>
-          <a href='https://christopherdennis.me/songify/' target='_blank'>
-            <img src='assets/img/songify.jpg' alt='music-service'>
-          </a>
-          <div class='project-name'>
-            <h2>Music Streaming Service</h2>
-          </div>
-          <ul class='description'>
-            <li>HTML | SASS | jQuery | MySQL | PHP</li>
-          </ul>
-        </div>
-
         <div class='project'>
           <a href='https://christopherdennis.me/twitch-app/' target='_blank'>
             <img src='assets/img/twitch-streamers.jpg' alt='twitch-app'>
