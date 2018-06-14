@@ -104,6 +104,21 @@
 
       <div class='projects'>
         <div class='bg'>
+          <div class='project webflix'>
+            <a href='https://christopherdennis.me/webflix/' target='_blank'>
+              <img src='assets/img/webflix.jpg' alt='webflix'>
+            </a>
+            <div class='info'>
+              <h2>Webflix</h2>
+              <h4 class='description'>React | React Router | Redux | Webpack</h4>
+              <p>Styled after Netflix, this site was built using React and bundled with Webpack.
+                The state is managed with Redux to simplify the exchange of information between components,
+                while React Router 4 facilitates navigation between pages.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class='bg white'>
           <div class='project twitch'>
             <div class='info'>
               <h2>Twitch Streamer Status</h2>
@@ -118,7 +133,7 @@
           </div>
         </div>
 
-        <div class='bg white'>
+        <div class='bg'>
           <div class='project weather'>
             <a href='https://christopherdennis.me/weather-app/' target='_blank'>
               <img src='assets/img/weather-app.jpg' alt='weather-app'>
@@ -126,14 +141,14 @@
             <div class='info'>
               <h2>React Weather Station</h2>
               <h4 class='description'>React | SASS | API</h4>
-              <p>This simple React application uses browser geolocation data to fetch local weather information from an API.
+              <p>This React application uses browser geolocation data to fetch local weather information from an API.
                 Styled with SASS, this SPA displays current weather conditions and a 5 day forecast.
                 The user can also search for conditions using a city name or zip code.</p>
             </div>
           </div>
         </div>
 
-        <div class='bg'>
+        <div class='bg white'>
           <div class='project quote'>
             <div class='info'>
               <h2>Random Quote Generator</h2>
@@ -147,7 +162,7 @@
           </div>
         </div>
 
-        <div class='bg white'>
+        <div class='bg'>
           <div class='project game'>
             <a href='https://christopherdennis.me/tic-tac-toe/' target='_blank'>
               <img src='assets/img/tic-tac-toe.jpg' alt='tic-tac-toe'>
