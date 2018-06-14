@@ -103,54 +103,56 @@
       </div>
 
       <div class='projects'>
-        <div class='project'>
-          <a href='https://christopherdennis.me/twitch-app/' target='_blank'>
-            <img src='assets/img/twitch-streamers.jpg' alt='twitch-app'>
-          </a>
-          <h2>Twitch Streamer Status</h2>
-          <ul class='description'>
-            <li>HTML | SASS | React | API</li>
-          </ul>
+        <div class='bg'>
+          <div class='project twitch'>
+            <div class='info'>
+              <h2>Twitch Streamer Status</h2>
+              <h4 class='description'>React | SASS | API</h4>
+              <p>Description of project goes here. Make sure it highlights the technology used</p>
+            </div>
+            <a href='https://christopherdennis.me/twitch-app/' target='_blank'>
+              <img src='assets/img/twitch-streamers.jpg' alt='twitch-app'>
+            </a>
+          </div>
         </div>
 
-        <div class='project'>
-          <a href='https://christopherdennis.me/weather-app/' target='_blank'>
-            <img src='assets/img/weather-app.jpg' alt='weather-app'>
-          </a>
-          <h2>React Weather Station</h2>
-          <ul class='description'>
-            <li>HTML | SASS | React | API</li>
-          </ul>
+        <div class='bg white'>
+          <div class='project weather'>
+            <a href='https://christopherdennis.me/weather-app/' target='_blank'>
+              <img src='assets/img/weather-app.jpg' alt='weather-app'>
+            </a>
+            <div class='info'>
+              <h2>React Weather Station</h2>
+              <h4 class='description'>React | SASS | API</h4>
+              <p>Description of project goes here. Make sure it highlights the technology used</p>
+            </div>
+          </div>
         </div>
 
-        <div class='project'>
-          <a href='https://christopherdennis.me/react-quote/' target='_blank'>
-            <img src='assets/img/quote-app.jpg' alt='quote-app'>
-          </a>
-          <h2>Random Quote Generator</h2>
-          <ul class='description'>
-            <li>HTML | CSS | React | API</li>
-          </ul>
+        <div class='bg'>
+          <div class='project quote'>
+            <div class='info'>
+              <h2>Random Quote Generator</h2>
+              <h4 class='description'>CSS | React | API</h4>
+              <p>Description of project goes here. Make sure it highlights the technology used</p>
+            </div>
+            <a href='https://christopherdennis.me/react-quote/' target='_blank'>
+              <img src='assets/img/quote-app.jpg' alt='quote-app'>
+            </a>
+          </div>
         </div>
 
-        <div class='project'>
-          <a href='https://christopherdennis.me/tic-tac-toe/' target='_blank'>
-            <img src='assets/img/tic-tac-toe.jpg' alt='tic-tac-toe'>
-          </a>
-          <h2>Tic-Tac-Toe</h2>
-          <ul class='description'>
-            <li>HTML | CSS | jQuery</li>
-          </ul>
-        </div>
-
-        <div class='project'>
-          <a href='https://christopherdennis.me/js-calc/' target='_blank'>
-            <img src='assets/img/calc.jpg' alt='calculator'>
-          </a>
-          <h2>JavaScript Calculator</h2>
-          <ul class='description'>
-            <li>HTML | CSS | jQuery</li>
-          </ul>
+        <div class='bg white'>
+          <div class='project game'>
+            <a href='https://christopherdennis.me/tic-tac-toe/' target='_blank'>
+              <img src='assets/img/tic-tac-toe.jpg' alt='tic-tac-toe'>
+            </a>
+            <div class='info'>
+              <h2>Tic-Tac-Toe</h2>
+              <h4 class='description'>HTML | CSS | jQuery</h4>
+              <p>Description of project goes here. Make sure it highlights the technology used</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
