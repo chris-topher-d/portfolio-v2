@@ -108,7 +108,9 @@
             <div class='info'>
               <h2>Twitch Streamer Status</h2>
               <h4 class='description'>React | SASS | API</h4>
-              <p>Description of project goes here. Make sure it highlights the technology used</p>
+              <p>This SPA was built using React and styled with SASS.
+                An API fetch retrieves streamer information, including current status.
+                The UI allows for the adding and removing of streamers from the list, as well as sorting by status.</p>
             </div>
             <a href='https://christopherdennis.me/twitch-app/' target='_blank'>
               <img src='assets/img/twitch-streamers.jpg' alt='twitch-app'>
@@ -124,7 +126,9 @@
             <div class='info'>
               <h2>React Weather Station</h2>
               <h4 class='description'>React | SASS | API</h4>
-              <p>Description of project goes here. Make sure it highlights the technology used</p>
+              <p>This simple React application uses browser geolocation data to fetch local weather information from an API.
+                Styled with SASS, this SPA displays current weather conditions and a 5 day forecast.
+                The user can also search for conditions using a city name or zip code.</p>
             </div>
           </div>
         </div>
@@ -134,7 +138,8 @@
             <div class='info'>
               <h2>Random Quote Generator</h2>
               <h4 class='description'>CSS | React | API</h4>
-              <p>Description of project goes here. Make sure it highlights the technology used</p>
+              <p>Generate a random quote and send it to your Twitter acccount with this React app.
+                Not feeling the current quote? Click a button and an API fetch will generate a new one for you.</p>
             </div>
             <a href='https://christopherdennis.me/react-quote/' target='_blank'>
               <img src='assets/img/quote-app.jpg' alt='quote-app'>
@@ -150,7 +155,8 @@
             <div class='info'>
               <h2>Tic-Tac-Toe</h2>
               <h4 class='description'>HTML | CSS | jQuery</h4>
-              <p>Description of project goes here. Make sure it highlights the technology used</p>
+              <p>Play the classic game of tic-tac-toe, powered by JavaScript.
+                Select a symbol and make the first move as the DOM updates via jQuery.</p>
             </div>
           </div>
         </div>

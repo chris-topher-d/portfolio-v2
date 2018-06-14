@@ -153,8 +153,8 @@ button {
             color: #999;
             font-weight: 300;
             margin-bottom: 20px; }
-            #portfolio .projects .bg .project .info .description li {
-              padding: 5px 0; }
+          #portfolio .projects .bg .project .info p {
+            line-height: 1.5; }
     #portfolio .projects .white {
       background-color: #fff; }
 
