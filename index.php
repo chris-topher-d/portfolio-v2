@@ -125,7 +125,7 @@
               <h4 class='description'>React | SASS | API</h4>
               <p>This SPA was built using React and styled with SASS.
                 An API fetch retrieves streamer information, including current status.
-                The UI allows for the adding and removing of streamers from the list, as well as sorting by status.</p>
+                Add and remove streamers from the list, and sort by status.</p>
             </div>
             <a href='https://christopherdennis.me/twitch-app/' target='_blank'>
               <img src='assets/img/twitch-streamers.jpg' alt='twitch-app'>
@@ -142,7 +142,7 @@
               <h2>React Weather Station</h2>
               <h4 class='description'>React | SASS | API</h4>
               <p>This React application uses browser geolocation data to fetch local weather information from an API.
-                Styled with SASS, this SPA displays current weather conditions and a 5 day forecast.
+                Styled with SASS, the app displays current weather conditions and a 5 day forecast.
                 The user can also search for conditions using a city name or zip code.</p>
             </div>
           </div>
@@ -171,7 +171,7 @@
               <h2>Tic-Tac-Toe</h2>
               <h4 class='description'>HTML | CSS | jQuery</h4>
               <p>Play the classic game of tic-tac-toe, powered by JavaScript.
-                Select a symbol and make the first move as the DOM updates via jQuery.</p>
+                Select a symbol and make the first move while jQuery updates the DOM.</p>
             </div>
           </div>
         </div>
