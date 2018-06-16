@@ -113,7 +113,8 @@
               <h4 class='description'>React | React Router | Redux | Webpack</h4>
               <p>Styled after Netflix, this site was built using React and bundled with Webpack.
                 The state is managed with Redux to simplify the exchange of information between components,
-                while React Router 4 facilitates navigation between pages.</p>
+                while React Router 4 facilitates navigation between pages.
+                Content is fetched from The Movie DB API.</p>
             </div>
           </div>
         </div>
