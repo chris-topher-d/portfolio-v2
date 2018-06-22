@@ -207,7 +207,7 @@
     </div>
 
     <div class='footer'>
-      <p>&copy;<?php echo date('Y'); ?> <span style='color: #085e8c'>Christopher Dennis</p>
+      <p>&copy;<?php echo date('Y'); ?> <span style='color: #e53236'>Christopher Dennis</p>
     </div>
 
   </body>
