@@ -52,11 +52,16 @@
           flex-direction: column;
           width: 400px;
 
-          h2 {
-            font-family: 'Raleway';
-            color: #085e8c;
-            text-transform: uppercase;
-            padding-bottom: 15px;
+          a {
+            text-decoration: none;
+
+            h2 {
+              font-family: 'Raleway';
+              color: #085e8c;
+              text-transform: uppercase;
+              padding-bottom: 15px;
+              border: none;
+            }
           }
 
           .description {

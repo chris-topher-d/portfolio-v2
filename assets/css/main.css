@@ -142,11 +142,14 @@ button {
           display: flex;
           flex-direction: column;
           width: 400px; }
-          #portfolio .projects .bg .project .info h2 {
-            font-family: 'Raleway';
-            color: #085e8c;
-            text-transform: uppercase;
-            padding-bottom: 15px; }
+          #portfolio .projects .bg .project .info a {
+            text-decoration: none; }
+            #portfolio .projects .bg .project .info a h2 {
+              font-family: 'Raleway';
+              color: #085e8c;
+              text-transform: uppercase;
+              padding-bottom: 15px;
+              border: none; }
           #portfolio .projects .bg .project .info .description {
             display: flex;
             padding: 0;
