@@ -94,12 +94,20 @@
 
     <div id='portfolio'>
       <div class='tech'>
-        <i class="devicon-html5-plain-wordmark"></i>
+        <img src='./assets/img/html5-blue.png' alt='html5-logo'>
+        <img src='./assets/img/css3-blue.png' alt='css3-logo'>
+        <img src='./assets/img/javascript-blue.png' alt='javascript-logo'>
+        <img src='./assets/img/sass-blue.png' alt='sass-logo'>
+        <img src='./assets/img/jquery-blue.png' alt='jquery-logo'>
+        <img src='./assets/img/react-blue.png' alt='react-logo'>
+        <img src='./assets/img/react-router-blue.png' alt='react-router-logo'>
+        <img src='./assets/img/redux-blue.png' alt='redux-logo'>
+        <!-- <i class="devicon-html5-plain-wordmark"></i>
         <i class="devicon-css3-plain-wordmark"></i>
         <i class="devicon-javascript-plain"></i>
         <i class="devicon-sass-original"></i>
         <i class="devicon-jquery-plain-wordmark"></i>
-        <i class="devicon-react-original-wordmark"></i>
+        <i class="devicon-react-original-wordmark"></i> -->
       </div>
 
       <div class='projects'>
@@ -110,11 +118,10 @@
             </a>
             <div class='info'>
               <a href='https://christopherdennis.me/webflix/' target='_blank'><h2>Webflix</h2></a>
-              <h4 class='description'>React | React Router | Redux | Webpack</h4>
-              <p>Styled after Netflix, this site was built using React and bundled with Webpack.
+              <h4 class='description'>React | React Router | Redux | SASS</h4>
+              <p>Styled after Netflix, this site was built using React and The Movie DB API.
                 The state is managed with Redux to simplify the exchange of information between components,
-                while React Router 4 facilitates navigation between pages.
-                Content is fetched from The Movie DB API.</p>
+                while React Router 4 facilitates navigation between pages.</p>
             </div>
           </div>
         </div>
@@ -183,10 +190,9 @@
       <h2>About</h2>
       <div class='statement'>
         <p>I'm a front-end developer who enjoys building and solving problems with code. Whether creating
-          a simple HTML document, or an interactive React application, my goal is to
-          learn something new with every project. I code every day, but when I'm not in front of a monitor, I
-          can be found hiking Austin area greenbelts, riding my motorcycle through the hill country, or digging
-          into a book at my favorite coffee shop.</p>
+          a simple HTML document, or a full stack application, my goal is to learn something new with every project.
+          I code every day, but when I'm not in front of a monitor, I can be found hiking Austin area greenbelts,
+          hanging out with friends, or digging into a book at my favorite coffee shop.</p>
       </div>
     </div>
 
